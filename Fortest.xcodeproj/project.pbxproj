@@ -15,6 +15,7 @@
 		1841BE8729B4EB0800C73BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1841BE8629B4EB0800C73BDF /* Assets.xcassets */; };
 		1841BE8A29B4EB0800C73BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1841BE8829B4EB0800C73BDF /* LaunchScreen.storyboard */; };
 		18C1F10929B8B20C00D9ED4A /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1F10829B8B20C00D9ED4A /* ViewController2.swift */; };
+		18C1F10C29B8B2C500D9ED4A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 18C1F10B29B8B2C500D9ED4A /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C1F10C29B8B2C500D9ED4A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = Fortest;
+			packageProductDependencies = (
+				18C1F10B29B8B2C500D9ED4A /* Alamofire */,
+			);
 			productName = Fortest;
 			productReference = 1841BE7729B4EB0600C73BDF /* Fortest.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 1841BE6E29B4EB0500C73BDF;
+			packageReferences = (
+				18C1F10A29B8B2C500D9ED4A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 1841BE7829B4EB0600C73BDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18C1F10A29B8B2C500D9ED4A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18C1F10B29B8B2C500D9ED4A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18C1F10A29B8B2C500D9ED4A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1841BE8329B4EB0600C73BDF /* Fortest.xcdatamodeld */ = {
